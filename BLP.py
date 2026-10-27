@@ -48,7 +48,7 @@ class BLP:
     # Function to add an object and its security level
     def add_object(self, object_id, level):
         if object_id in self.objects:
-            print(f"> FAIL: Object '{object_id}' not found.")
+            print(f"> FAIL: Object '{object_id}' already exists.")
             return False
         if not self._is_valid_level(level):
             print(f"> FAIL: Invalid security level '{level}' for '{object_id}'.")
